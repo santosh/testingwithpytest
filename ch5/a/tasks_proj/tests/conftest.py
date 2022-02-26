@@ -64,3 +64,13 @@ def db_with_multi_per_owner(tasks_db, tasks_mult_per_owner):
     """Connected db with 9 tasks, 3 owners, all with 3 tasks."""
     for t in tasks_mult_per_owner:
         tasks.add(t)
+
+def pytest_report_header():
+    """Thank tester for running tests."""
+    return "Thanks for running the tests."
+
+def pytest_report_teststatus(report):
+    """Turn failures into opportunities."""
+    if report.when == 'call' and report.failed:
+        return (report.outcome, 'O', 'OPPORTUNITY for improvement')
+
