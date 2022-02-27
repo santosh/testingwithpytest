@@ -2,7 +2,7 @@
 
 Practice exercises from the book **Python Testing with pytest: Simple, Rapid, Effective, and Scalable**
 
-From it from [this link](https://amzn.to/3DIYPwN) and I get a commission.
+Buy it from [this link](https://amzn.to/3DIYPwN) and I get a commission.
 
 ## Setup and Run tests
 
